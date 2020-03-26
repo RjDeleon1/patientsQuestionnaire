@@ -12,6 +12,7 @@ import { Button,
 import { CheckBox } from 'react-native-elements';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import * as Font from 'expo-font';
 
 // Other resopurces
 // https://react-native-elements.github.io/react-native-elements/docs/getting_started.html
@@ -107,6 +108,7 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Name:"
             onChangeText={(name) => this.setState({ name })}
             value={this.state.name}
             />
@@ -115,6 +117,8 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Birthday:"
+            keyboardType="numbers-and-punctuation"
             onChangeText={(birthday) => this.setState({ birthday })}
             value={this.state.birthday}
             />
@@ -123,6 +127,8 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Email Address:"
+            keyboardType="twitter"
             onChangeText={(email) => this.setState({ email })}
             value={this.state.email}
             />
@@ -131,6 +137,8 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Phone Number:"
+            keyboardType="numeric"
             onChangeText={(phone) => this.setState({ phone })}
             value={this.state.phone}
             />
@@ -139,6 +147,7 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Address:"
             onChangeText={(address) => this.setState({ address })}
             value={this.state.address}
             />
@@ -147,6 +156,7 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Physician Name:"
             onChangeText={(physician) => this.setState({ physician })}
             value={this.state.physician}
             />
@@ -155,6 +165,7 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Card Number:"
             onChangeText={(insurance) => this.setState({ insurance })}
             value={this.state.insurance}
             />
@@ -179,6 +190,8 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Date of last examination:"
+            keyboardType="numbers-and-punctuation"
             onChangeText={(lastExam) => this.setState({ lastExam })}
             value={this.state.lastExam}
             />
@@ -203,6 +216,7 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Description:"
             onChangeText={(illness) => this.setState({ illness })}
             value={this.state.illness}
             />
@@ -227,6 +241,7 @@ class SurveyScreen extends Component{
           <TextInput
             style={styles.boxText}
             placeholderTextColor="gray"
+            placeholder="Description:"
             onChangeText={(lastOperation) => this.setState({ lastOperation })}
             value={this.state.lastOperation}
             />
